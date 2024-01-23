@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settimana 1 Lezione 2</title>
+</head>
+<header>
+    <img src="assets/img/logo.svg" alt="logo" width="250px" />
+    <p>Epicode - Il blog dei developers</p>
+    <nav>
+        <ul>
+            <li><a href="javascript:void(0)">Home</a></li>
+            <li><a href="javascript:void(0)">Articoli</a></li>
+            <li><a href="javascript:void(0)">Job</a></li>
+        </ul>
+    </nav>
+</header>
+<hr />
+
+<body>
+    <main>
+        <h2>Come creare un template per i post</h2>
+        <p>di Mario Rossi - pubblicato il 25-10-2020</p>
+        <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le <b>parti comuni</b> da
+            applicare a tutte le pagine</p>
+        <p>Le varie aree saranno quindi suddivise in:</p>
+        <ul>
+            <li>Contenuti di intestazione del tag <code>&lt;header&gt;</code></li>
+            <li>Contenuti centrali del tag <code>&lt;main&gt;</code> (corpo principale)</li>
+            <li>Contenuti di fine pagina comuni, da inserire nel tag <code>&lt;footer&gt;</code></li>
+        </ul>
+        <h2>Formattazione del codice</h2>
+        <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da <b>selezionare con i
+                CSS</b>. Perciò i passi saranno:</p>
+        <ol>
+            <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato</li>
+            <li>Scrivere l'HTML dei tag esterni a quelli interni e dall'alto verso il basso</li>
+            <li>Applicare gli stili CSS</li>
+        </ol>
+        <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressoché totale</p>
+        <table>
+            <caption>Diffusione dei CSS</caption>
+            <thead>
+                <tr>
+                    <th>Anno</th>
+                    <th>% di utilizzo</th>
+                    <th>Supporto browsers</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2000</td>
+                    <td>20%</td>
+                    <td>17%</td>
+                </tr>
+                <tr>
+                    <td>2002</td>
+                    <td>35%</td>
+                    <td>22%</td>
+                </tr>
+                <tr>
+                    <td>2004</td>
+                    <td>45%</td>
+                    <td>42%</td>
+                </tr>
+                <tr>
+                    <td>2008</td>
+                    <td>80%</td>
+                    <td>51%</td>
+                </tr>
+                <tr>
+                    <td>2012</td>
+                    <td>100%</td>
+                    <td>76%</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Un test di validazione potrà essere fatto tramite il <a href="https://jigsaw.w3.org/css-validator/"
+                target="_blank">tool online</a> dedicato allo scopo.
+            Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers
+            come loro:
+        </p>
+        <iframe width="350" height="350" src="https://www.youtube.com/embed/dvOvHXruEDM?si=IdBv-b50yq3gYDrC"
+            title="YouTube video player" frameborder="2"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+        <h2>Novità</h2>
+        <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
+        <form>
+            <fieldset>
+                <input type="email" placeholder="inserisci l'email" />
+                <button type="submit">Iscriviti!</button> 
+            </fieldset>
+        </form>
+    </main>
+    <aside>
+        <h2>Articoli correlati</h2>
+        <a href="javascript:void(0)">Validare il codice HTML</a>
+        <p>Categoria: develop</p>
+        <p>Data: 18-9-2020</p>
+        <a href="javascript:void(0)">Correggere la sintassi</a>
+        <p>Categoria: develop</p>
+        <p>Data: 16-9-2020</p>
+        <a href="javascript:void(0)">Meno Kb nella pagina</a>
+        <p>Categoria: ottimizzazione</p>
+        <p>Data: 30-9-2020</p>
+    </aside>
+    <hr />
+    <footer>
+        <p>Blog Epicode &copy;2021</p>
+        <address>Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233. <a href= "mailto:info@epicode.school">info@epicode.school</a></address>
+    </footer>
+</body>
+
+</html>
