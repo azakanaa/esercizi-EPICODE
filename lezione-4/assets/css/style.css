@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../img/sfondo.png');
+    background-repeat: repeat;
+}
+
+header {
+    margin: 1.5em;
+    padding: 1.5em;
+    background-image: linear-gradient(#00A0C5, #036D86);
+    box-shadow: 2px 2px 4px 1px #666;
+    text-align: center;
+}
+
+main {
+    margin: 1.5em;
+    padding: 1.5em;
+    background-color: white;
+    box-shadow: 2px 2px 4px 1px #666;
+}
+
+header p {
+    color: white;
+    font-weight: bold;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: red;
+}
+
+code {
+    background-color: #e3e3e3;
+    border: 0.7px solid;
+    border-radius: 3px;
+}
+
+.sottotitolo {
+    color: #939191;
+    font-size: small;
+}
+
+.material-symbols-outlined {
+    font-size: small;
+}
+
+b {
+    color: #A32C76;
+}
+
+table tr:nth-child(odd) {
+    background-color: #F3F3F3;
+    border-block-color: lightgrey;
+}
+
+table tr:first-child {
+    background-color: #3F6BCA;
+    color: white;
+}
+
+table {
+    border-bottom: #3F6BCA 3px solid;
+    border-collapse: collapse;
+}
+
+tr , td {
+    padding: 10px;
+    text-align: center;
+}
+
+caption {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.tool {
+    color: #00A0C5;
+}
+
+iframe {
+    border-radius: 30px;
+}
+
+form {
+    display: inline-block;
+}
+
+.bottone {
+    color: white;
+    background-color: #3F6BCA;
+    border: none;
+}
+
+.novità {
+    background-color: #E3E3E3;
+    padding: 1em;
+    margin: 2rem auto;
+}
+
+.n-titolo {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: lighter;
+}
+
+.email {
+    border: none;
+    border-bottom: 1px dashed black;
+}
+
+aside h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: lighter;
+}
+
+.validare , .sintassi , .kilobyte {
+    background-color: #E3E3E3;
+    border: 1px #C9C9C9 solid;
+    margin: 2rem auto;
+    padding: 1em;
+    line-height: 12px;
+}
+
+.data {
+    font-size: small;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#calendar_month {
+    display: flex;
+    align-items: flex-end;
+}
+
+.validare a, .sintassi a, .kilobyte a {
+    color: #00A0C5;
+}
+
+footer {
+    margin: 1.5em;
+    padding: 1.5em;
+    background-image: linear-gradient(#055567, #333637);
+    box-shadow: 2px 2px 4px 1px #666;
+    text-align: center;
+    color: white;
+}
+
+footer address {
+    font-style: normal;
+}
+
+footer address a {
+    color: #F403F6;
+}
