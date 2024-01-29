@@ -17,6 +17,8 @@ In JavaScript sono presenti 3 tipi di datatype:
 1. Stringa = indica tutti gli elementi testuali (es. "Ciao", nomi propri, città, ecc.) che devono essere scritti tra le virgolette, doppie o singole; 
 2. Numerico = indica tutti gli elementi numerici (es. 1, 2, 1.2, ecc.), compresi quelli decimali che si scrivono con il punto;
 3. Booleano = indica soltanto due valori, vero o falso, e sono tipicamente utilizzati per dei controlli e per prendere delle decisioni.
+4. null =
+5. undefined =
 */
 
 /* ESERCIZIO 2
@@ -52,6 +54,8 @@ console.log(x);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+name = "Cretella";
+console.log(myName)
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
@@ -60,7 +64,7 @@ console.log(x);
 /* SCRIVI QUI LA TUA RISPOSTA */
 let numero3 = 4;
 
-numero3 = x -= numero3;
+numero3 = numero3 -= x;
 console.log(numero3);
 
 /* ESERCIZIO 7
@@ -73,5 +77,5 @@ console.log(numero3);
 let name1 = "john";
 let name2 = "John";
 
-name1 !== name2;
-console.log(name1 + name2)
+let verifica = name1 !== name2;
+console.log(verifica)
