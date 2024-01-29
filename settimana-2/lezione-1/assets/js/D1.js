@@ -57,6 +57,10 @@ console.log(x);
 name = "Cretella";
 console.log(myName)
 
+//const myName = "Martina";
+// myName = "Cretella";
+// console.log(myName)
+
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
 */
