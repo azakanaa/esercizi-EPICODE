@@ -1,0 +1,174 @@
+body {
+    background-color: #E9EDEE;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo {
+    background-color: #222F3F;
+}
+
+#logo img {
+    width: 100px;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+}
+
+nav {
+    background-color: #364759;
+}
+
+nav p {
+    display: inline-block;
+    color: white;
+    margin: 0;
+    padding: 0.5em 0em 0.5em 1.5em;
+}
+
+main {
+    margin: 1.5em;
+}
+
+#shopallholiday {
+    background-color: #F56600;
+    color: white;
+    padding: 0.1em;
+    text-align: center;
+}
+
+#holidaygift {
+    background-image: url(../img/bg-image.png);
+    background-position: center top;
+    background-size: contain;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 3em;
+    margin: 1.5em 0 1.5em 0;
+}
+
+h1,
+h2 {
+    color: white;
+    margin: 0;
+}
+
+h2 {
+    font-size: small;
+    padding-top: 2em;
+}
+
+/* sezione 1 */
+
+#sezione1 {
+    background-color: white;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.shopnow h3 {
+    font-weight: 100;
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.shopnow p {
+    display: inline-block;
+    color: #438893;
+    margin-left: 1em;
+}
+
+.shopnow {
+    text-align: left;
+    ;
+}
+
+.immagini {
+    display: inline-block;
+    margin: auto;
+}
+
+.immagini img {
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px lightgrey;
+}
+
+/* sezione 2 */
+
+#gifting {
+    box-sizing: border-box;
+    margin-top: 1.5em;
+}
+
+#gifimg img {
+    width: 100%;
+    height: 300px;
+}
+
+#gifshop {
+    text-align: center;
+    margin: 0;
+}
+
+#gifting h3 {
+    font-weight: 100;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+#gifting p {
+    display: inline-block;
+    color: #438893;
+}
+
+/* sezione 3 */
+
+#soundcheer {
+    box-sizing: border-box;
+    margin-top: 1.5em;
+}
+
+#cheerimg img {
+    width: 100%;
+    height: 300px;
+}
+
+#cheershop {
+    text-align: center;
+    margin: 0;
+}
+
+#soundcheer h3 {
+    font-weight: 100;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+#soundcheer p {
+    display: inline-block;
+    color: #438893;
+}
+
+/* footer */
+#backtop {
+    background-color: #364759;
+    padding: 1em;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-align: center;
+}
+
+#footerimg {
+    background-color: #222F3F;
+    text-align: center;
+}
+
+footer img {
+    width: 150px;
+    padding: 3.5em;
+}
