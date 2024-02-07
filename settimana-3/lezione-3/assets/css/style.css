@@ -1,0 +1,41 @@
+body {
+    background-color: darksalmon;
+    font-family: 'Protest Riot', sans-serif;
+}
+
+h1 {
+    color: aliceblue;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.container {
+    background-color: antiquewhite;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 2em;
+    border-radius: 1%;
+    border-style: dashed;
+    width: 50%;
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+
+#scrivere {
+    width: 80%;
+    text-align: center;
+}
+
+button {
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: cadetblue;
+    color: aliceblue;
+    border-radius: 5%;
+    font-weight: bolder;
+}
+
+button:hover {
+    background-color: cadetblue;
+}
