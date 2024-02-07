@@ -39,3 +39,16 @@ button {
 button:hover {
     background-color: cadetblue;
 }
+
+#lista {
+    list-style: none;
+    color: black;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
