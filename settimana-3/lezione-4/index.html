@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tombola</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
-    <main>
-        <h1>LA SMORFIA NAPOLETANA</h1>
-        <!-- griglia dei numeri -->
-        <div id="griglia"></div>
-        <!-- bottone che genera il numero casuale -->
-        <div>
-            <button type="button" id="bottone">Pesca un numero</button>
-        </div>
-    </main>
-    
-    <script src="assets/js/script.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TOMBOLA!</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+	<body>
+		<h1>TOMBOLA</h1>
+
+		<div id="button">
+			<button type="button" id="estrai">ESTRAI</button>&nbsp;
+            <button type="button" id="reset">RICOMINCIA</button>
+            <h3 id="estratto"></h3>
+		</div>
+		<hr />
+
+		<div id="tombolone"></div>
+
+		<script src="assets/js/script.js"></script>
+	</body>
 </html>
