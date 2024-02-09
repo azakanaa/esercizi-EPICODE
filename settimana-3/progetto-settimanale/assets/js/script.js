@@ -333,6 +333,7 @@ countMovies(movies);
 /* ESERCIZIO 15
   Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
 */
+
 /* function onlyInLastMillennium(movies) {
     let mezzoYear = movies.Year.slice(0, 2);
     if (mezzoYear < 20) {
@@ -349,7 +350,7 @@ onlyInLastMillennium(movies);
 */
 let sumAllTheYears = '';
 movies.forEach(element => {
-    sumAllTheYears += parseInt(element.Year);
+    sumAllTheYears + element.Year;
 });
 console.log("La somma di tutti gli anni dei film è " + sumAllTheYears);
 
