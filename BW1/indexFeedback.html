@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BenchMark Epicode</title>
+        <link rel="stylesheet" href="assets/css/normalize.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Outfit:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+
+    <body>
+        <div class="background"></div>
+        <div class="container">
+            <header>
+                <img class="logo" src="assets/img/epicode_logo.png" />
+            </header>
+            <div id="feedback" style="display: none">
+                <form method="post" id="form">
+                    <!--Con il metodo post -->
+                    <h1>Dicci come sta andando</h1>
+                    <h2>
+                        Da 1 a 10, quanto raccomanderesti EPICODE ad amici o
+                        colleghi?
+                    </h2>
+                    <div id="stelline"></div>
+                    <h2>
+                        Lascia un feedback e raccontaci come sta andando questa
+                        esperienza
+                    </h2>
+                    <input
+                        type="text"
+                        placeholder="Scrivi un commento qui"
+                        name="commento"
+                        id="commento"
+                        minlength="10"
+                        required
+                    />
+                    <button
+                        id="buttonInformazioni"
+                        class="buttonInformazioni"
+                        type="submit"
+                    >
+                        INVIA UN FEEDBACK
+                    </button>
+                </form>
+            </div>
+            <div id="feedbackInviato" style="display: none">
+                <h2 class="centrato">Grazie per il feedback</h2>
+            </div>
+        </div>
+        <footer>
+            <h5>
+                &copy; Team 1 FS0124A&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a href="https://github.com/Brokins00" target="_blank"
+                    >Fabio Brogi</a
+                >&nbsp;&nbsp;&minus;&nbsp;
+                <a href="https://github.com/GabrieleTerracciano" target="_blank"
+                    >Gabriele Terracciano</a
+                >&nbsp;&nbsp;&minus;&nbsp;
+                <a href="https://github.com/Leonardomarialeoni" target="_blank"
+                    >Leonardo Maria Leoni</a
+                >&nbsp;&nbsp;&minus;&nbsp;
+                <a href="https://github.com/sabrinabarzoni" target="_blank"
+                    >Sabrina Barzoni</a
+                >&nbsp;&nbsp;&minus;&nbsp;
+                <a href="https://github.com/azakanaa" target="_blank"
+                    >Martina Cretella</a
+                >&nbsp;&nbsp;&minus;&nbsp;
+                <a href="https://github.com/Simonecaste96" target="_blank"
+                    >Simone Castelluccio</a
+                >&nbsp;&nbsp;&nbsp;|
+            </h5>
+        </footer>
+        <script src="assets/js/scriptFeedback.js"></script>
+    </body>
+</html>
