@@ -230,20 +230,15 @@ footer a {
         padding: 20px;
     }
 
-    header, header div img, header div p, header nav {
-        display: inline-block;
-    }
-
-    header p, header div img {
-        margin: 0;
-    }
-
     header div {
-        width: 100%;
+        display: inline-block;
+        width: 75%;
+        text-align: left;
     }
 
-    header ul li {
+    header nav {
         text-align: end;
+        display: inline;
     }
 
     table th, td, tr {
@@ -253,6 +248,7 @@ footer a {
     #divNovitàEVideo {
         display: inline-block;
         box-sizing: border-box;
+        vertical-align: bottom;
     }
 
     iframe, #divSezione {
