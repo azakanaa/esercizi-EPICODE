@@ -1,0 +1,77 @@
+body {
+  background-color: #666666;
+  font-family: "Indie Flower", cursive;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+div {
+  width: 200px;
+  height: 150px;
+  margin: 2rem;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 5px 5px 5px #3e3d3e;
+}
+
+div h2 {
+  font-weight: bold;
+  font-size: xx-large;
+  padding-top: 1.3em;
+  padding-bottom: 0.5em;
+}
+
+div p {
+  font-size: larger;
+}
+
+.giallo {
+  background: rgb(236, 237, 185);
+  background: linear-gradient(
+    180deg,
+    rgba(236, 237, 185, 1) 61%,
+    rgba(194, 194, 194, 1) 100%
+  );
+  transform: rotate(-8deg);
+}
+
+.verde {
+  background: rgb(200, 251, 202);
+  background: linear-gradient(
+    180deg,
+    rgba(200, 251, 202, 1) 61%,
+    rgba(194, 194, 194, 1) 100%
+  );
+  transform: rotate(4deg);
+}
+
+.viola {
+  background: rgb(196, 197, 240);
+  background: linear-gradient(
+    180deg,
+    rgba(196, 197, 240, 1) 55%,
+    rgba(177, 177, 177, 1) 92%
+  );
+  transform: rotate(-10deg);
+}
+
+div:hover {
+  animation: zoom 1.5s ease both;
+}
+
+@keyframes zoom {
+  from {
+    transform: rotate(-10deg);
+    width: 200px;
+    height: 150px;
+  }
+  to {
+    transform: rotate(0deg);
+    width: 250px;
+    height: 200px;
+  }
+}
