@@ -7,4 +7,22 @@
 6 animare le altre 2 parole
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
+body {
+    font-family: "Bree Serif", serif;
+}
 
+main {
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    padding: 1rem;
+    line-height: 1.5;
+    border: 3px solid grey;
+    display: flex;
+}
+
+.parole {
+    color: #6A889C;
+}

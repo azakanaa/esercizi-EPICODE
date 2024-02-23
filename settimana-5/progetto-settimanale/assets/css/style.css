@@ -1,0 +1,207 @@
+body {
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER + NAV */
+
+header {
+    background-color: #ffc017;
+    width: 100%;
+}
+
+nav {
+    border-bottom: 1px solid black;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: #ffc017;
+    z-index: 1;
+}
+
+#navBar, #link {
+    display: flex;
+    padding: 0.5em;
+}
+
+#navBar img {
+    margin-left: 4em;
+}
+
+#link p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+#link {
+    margin-left: 50%;
+    width: 40%;
+    align-items: center;
+}
+
+#link p {
+    margin-right: 5%;
+    font-size: small;
+    justify-content: baseline;
+}
+
+#getStarted {
+    background-color: black;
+    color: white;
+    border-width: 2px 4px;
+    border-radius: 40px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-style: none;
+    padding: 1em 1.5em 1em 1.5em;
+}
+
+/* STAY CURIOUS */
+
+#stayCurious {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+#stayCuriousDiv {
+    flex-grow: 1;
+}
+
+h1 {
+    font-family: "Spectral", serif;
+    font-size: 100px;
+    margin-bottom: 0;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    font-weight: 500;
+    letter-spacing: -6px;
+}
+
+#discover {
+    margin-top: 0;
+    margin-left: 4rem;
+    font-size: 20px;
+    width: 40%;
+}
+
+#artwork {
+    justify-content: end;
+}
+
+#startReading {
+    margin-left: 4rem;
+    background-color: black;
+    color: white;
+    border-style: none;
+    border-width: 2px 4px;
+    border-radius: 40px;
+    padding: 0.5em 3em 0.5em 3em;
+    font-size: large;
+    margin-top: 2em;
+}
+
+/* TRENDING ON MEDIUM */
+
+#divTrending {
+    display: flex;
+    margin-left: 4rem;
+    margin-top: 2.5rem;
+}
+
+#divTrending h2 {
+    text-transform: uppercase;
+    color: #191919;
+    font-size: smaller;
+    font-weight: 900;
+    align-items: center;
+    margin-left: 10px;
+}
+
+/* MINI-ARTICOLI */
+section {
+    margin-bottom: 2%;
+}
+
+#sezioneTrending {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerTrending:first-child, .containerTrending:nth-child(4) {
+    margin-left: 4rem;
+}
+
+.containerTrending {
+    display: flex;
+    width: 30%;
+}
+
+.imgRotonde {
+    border-radius: 50%;
+}
+
+.imgRadius {
+    border-radius: 20%;
+}
+
+.containerTrending img {
+    width: 20px;
+}
+
+.articoloDiv {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    line-height: 1px;
+}
+
+.numero {
+    font-size: larger;
+    font-weight: 900;
+    color: #D0D2D1;
+}
+
+.autore {
+    font-weight: bold;
+    font-size: small;
+}
+
+.articoloDiv span img {
+    margin-right: 10px;
+}
+
+.numeroDiv {
+    width: 15%;
+}
+
+.data {
+    color: rgb(149, 145, 145);
+    font-size: small;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.in {
+    color: rgb(138, 138, 138);
+    margin-right: 3px;
+}
+
+h3 {
+    margin-bottom: 15%;
+}
+
+.h3Lunghi {
+    line-height: 20px;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 5%;
+}
+
+.star {
+    margin-left: 5px;
+}
+

@@ -62,7 +62,7 @@ div p {
 /* GIALLO */
 
 .giallo:hover {
-  animation: zoomGiallo 1.5s ease both;
+  animation: zoomGiallo 0.5s ease both;
 }
 
 @keyframes zoomGiallo {
@@ -79,7 +79,7 @@ div p {
 }
 
 .giallo:not(:hover) {
-  animation: baseGiallo 1.5s ease both;
+  animation: baseGiallo 0.5s ease both;
 }
 
 @keyframes baseGiallo {
@@ -98,7 +98,7 @@ div p {
 /* VERDE */
 
 .verde:hover {
-  animation: zoomVerde 1.5s ease both;
+  animation: zoomVerde 0.5s ease both;
 }
 
 @keyframes zoomVerde {
@@ -115,7 +115,7 @@ div p {
 }
 
 .verde:not(:hover) {
-  animation: baseVerde 1.5s ease both;
+  animation: baseVerde 0.5s ease both;
 }
 
 @keyframes baseVerde {
@@ -134,35 +134,35 @@ div p {
 /* VIOLA */
 
 .viola:hover {
-    animation: zoomViola 1.5s ease both;
+  animation: zoomViola 0.5s ease both;
+}
+
+@keyframes zoomViola {
+  from {
+    transform: rotate(-10deg);
+    width: 200px;
+    height: 150px;
   }
-  
-  @keyframes zoomViola {
-    from {
-      transform: rotate(-10deg);
-      width: 200px;
-      height: 150px;
-    }
-    to {
-      transform: rotate(0deg);
-      width: 250px;
-      height: 200px;
-    }
+  to {
+    transform: rotate(0deg);
+    width: 250px;
+    height: 200px;
   }
-  
-  .viola:not(:hover) {
-      animation: baseViola 1.5s ease both;
+}
+
+.viola:not(:hover) {
+  animation: baseViola 0.5s ease both;
+}
+
+@keyframes baseViola {
+  from {
+    transform: rotate(0deg);
+    width: 250px;
+    height: 200px;
   }
-  
-  @keyframes baseViola {
-      from {
-         transform: rotate(0deg);
-        width: 250px;
-        height: 200px;
-      }
-      to {
-          transform: rotate(-10deg);
-        width: 200px;
-        height: 150px;
-    }
+  to {
+    transform: rotate(-10deg);
+    width: 200px;
+    height: 150px;
   }
+}
