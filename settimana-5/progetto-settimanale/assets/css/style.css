@@ -1,3 +1,5 @@
+/* RISOLUZIONE DA 1300 IN SU */
+
 body {
     font-family: "Roboto", sans-serif;
     padding: 0;
@@ -154,6 +156,7 @@ section {
 .articoloDiv {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     margin-left: 1em;
     line-height: 1px;
 }
@@ -173,10 +176,6 @@ section {
     margin-right: 10px;
 }
 
-.numeroDiv {
-    width: 15%;
-}
-
 .data {
     color: rgb(149, 145, 145);
     font-size: small;
@@ -190,11 +189,11 @@ section {
     margin-right: 3px;
 }
 
-h3 {
+#sezioneTrending h3 {
     margin-bottom: 15%;
 }
 
-.h3Lunghi {
+#sezioneTrending .h3Lunghi {
     line-height: 20px;
     width: 100%;
     margin-top: 0;
@@ -205,3 +204,117 @@ h3 {
     margin-left: 5px;
 }
 
+hr {
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+/* SECONDA SEZIONE CON IMMAGINI */
+
+#sezioneImmagini {
+    width: 60%;
+    display: flex;
+}
+
+#sezioneImmagini h3 {
+    font-weight: 900;
+    font-size: large;
+}
+
+.material-symbols-outlined {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.articolo {
+    display: inline-block;
+    vertical-align: top;     /* Vertically align the inline-block elements */
+    height: 100%;
+    margin: 0 1rem 0 4rem;
+    font-size: small;
+    width: 400px;
+}
+
+.immagini {
+    display: inline;
+    width: 40%;
+}
+
+.scrittore {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.orario {
+    display: inline;
+}
+
+.descrizione, .orario {
+    color: #6C7078;
+}
+
+.sfondoGrigio {
+    background-color: #F2F3F3;
+    border-width: 2px 4px;
+    border-radius: 40px;
+    padding: 8.5px;
+}
+
+.fotoAutore, #fotoAutore {
+    border-radius: 50%;
+    width: 70%;
+}
+
+#fotoAutore {
+    border-radius: 10px;
+}
+ 
+.fotoArticoli {
+    width: 300px;
+}
+
+/* ASIDE */
+
+aside {
+    float: inline-end; 
+    width: 30%;
+    margin-left: 4rem;
+    color: #191919;
+    position: sticky;
+    top: 74px;
+}
+
+aside p {
+    width: 100%;
+    font-size: small;
+    font-weight: 900;
+}
+
+.bottoneAside {
+    border-style: none;
+    background-color: white;
+    border: 1px solid lightgray;
+    color: grey;
+    border-radius: 4px;
+    padding: 0.5em 1.5em;
+    margin: 0.2em;
+}
+
+.bottoneAside:last-child {
+    margin-bottom: 30px;
+}
+
+aside ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: small;
+    color: rgb(124, 123, 123);
+}
+
+aside ul li {
+    display: inline;
+    margin: 10px;
+    line-height: 30px;
+}
