@@ -1,0 +1,13 @@
+$radius: 5px;
+
+@mixin titoli {
+    font-family: "Prompt", sans-serif;
+}
+
+@mixin dettaglibottoni {
+    border-style: none;
+    border-radius: $radius;
+    padding: 15px 15px;
+    color: $colore-testi;
+    font-size: 10px;
+}

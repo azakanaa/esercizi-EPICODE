@@ -1,0 +1,96 @@
+/* IMPORT */
+/* IMPORT */
+/* VARIABILI */
+body {
+  font-family: "Prompt", sans-serif;
+}
+
+header {
+  background-color: #640fc5;
+}
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+nav, .navlinks {
+  display: flex;
+}
+
+.navlinks {
+  color: white;
+  list-style: none;
+  padding-left: 0;
+  margin-right: 4em;
+}
+
+.navlinks li {
+  padding: 1em;
+}
+
+.navbar-brand, .lorem, .bottone {
+  margin-left: 4em;
+}
+
+h1 {
+  margin-left: 4rem;
+  width: 30%;
+  font-size: 50px;
+  line-height: 0.9;
+  letter-spacing: -1.5px;
+  margin-bottom: 0;
+}
+
+.lorem {
+  color: white;
+  width: 50%;
+}
+
+h1, .lorem {
+  opacity: 0.6;
+}
+
+.pcHeader {
+  width: 15%;
+  border-radius: 5px;
+}
+
+/* IMPORT */
+.azzurro {
+  border-style: none;
+  border-radius: 5px;
+  padding: 15px 15px;
+  color: white;
+  font-size: 10px;
+  background-color: #0e6cff;
+  margin-left: 4rem;
+  margin-bottom: 80px;
+}
+
+.arancione {
+  border-style: none;
+  border-radius: 5px;
+  padding: 15px 15px;
+  color: white;
+  font-size: 10px;
+  background-color: #ff8700;
+}
+
+.verde {
+  border-style: none;
+  border-radius: 5px;
+  padding: 15px 15px;
+  color: white;
+  font-size: 10px;
+  background-color: #4caf50;
+}
+
+/* VARIABILI */
+/* STYLE */
+
+/*# sourceMappingURL=style.css.map */

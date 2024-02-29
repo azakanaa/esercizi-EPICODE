@@ -1,0 +1,19 @@
+/* IMPORT */
+@import '../mixins/mixins';
+
+.azzurro {
+    @include dettaglibottoni;
+    background-color: $bottone-azzurro;
+    margin-left: 4rem;
+    margin-bottom: 80px;
+}
+
+.arancione {
+    @include dettaglibottoni;
+    background-color: $bottone-arancione;
+}
+
+.verde {
+    @include dettaglibottoni;
+    background-color: $bottone-verde;
+}
