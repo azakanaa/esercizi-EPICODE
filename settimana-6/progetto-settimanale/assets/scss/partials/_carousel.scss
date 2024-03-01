@@ -1,0 +1,22 @@
+.carousel-item img {
+    margin: 5px;
+}
+
+.container-lg-fluid {
+    width: 100%;
+}
+
+
+@media screen and (min-width: 768px) {
+    .carousel-item img {
+        width: 15%;
+        margin: 1px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .carousel-item img {
+        width: 15%;
+        margin: 5px;
+    }
+}
