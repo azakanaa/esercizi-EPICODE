@@ -1,0 +1,18 @@
+#maturity:hover,
+#edit:hover,
+#save:hover,
+#cancel:hover,
+#deleteProfile:hover,
+#lista:hover,
+#quadratini:hover {
+    background-color: white;
+    color: black;
+}
+
+#carouselExampleAutoplaying:hover {
+    animation-play-state: paused
+}
+
+footer p:hover {
+    text-decoration: underline;
+}

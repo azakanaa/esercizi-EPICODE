@@ -25,33 +25,61 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-sm-5 col-lg-4"></div>
-                <div class="col-sm-2 col-lg-4" id="mezzo">
+                <div class="col-4 p-0"></div>
+                <div class="col-4 px-2" id="mezzo">
                     <h1 class="text-light">Edit Profile</h1>
                     <img src="assets/img/avatar.png" alt="Avatar" width="80" height="80" />
-                    <input type="text" size="8" placeholder="Epicoder #1" />
-                    <p>Language:</p>
+                    <input type="text" size="8" placeholder="Epicoder #1" class="text-light"/>
+                    <p  class="text-secondary">Language:</p>
                     <div class="dropdown" id="dropdown">
                         <button id="english" class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             English
                         </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a class="dropdown-item text-light" href="#">Italian</a></li>
+                            <li><a class="dropdown-item text-light" href="#">French</a></li>
+                            <li><a class="dropdown-item text-light" href="#">German</a></li>
                         </ul>
                     </div>
-                    <p class="mt-sm-1">Maturity Settings:</p>
-                    <button type="button" class="bg-dark" id="maturity">
-                        ALL MATURITY SETTINGS
-                    </button>
-                    <p class="mt-sm-1">Show files for all maturity settings for this profile.</p>
-                    <button class="px-2" type="button" id="edit">
-                        EDIT
-                    </button>
+                    <div id="maturitySettings">
+                        <p class="mt-sm-1 text-secondary">Maturity Settings:</p>
+                        <button type="button" class="p-2" id="maturity">
+                            ALL MATURITY SETTINGS
+                        </button>
+                        <p class="mt-sm-1 text-light">Show files for all maturity settings for this profile.</p>
+                        <button class="px-4" type="button" id="edit">
+                            EDIT
+                        </button>
+                    </div>
+
+                    <p class="text-secondary mt-2">Autoplay Controls:</p>
+                    <div id="autoplay1">
+                        <input type="checkbox" id="episodi" name="episodi" checked />
+                        <label for="episodi" id="labelEpisodi">Autoplay next episode in a series on all devices</label>
+                    </div>
+                    <div id="autoplay2">
+                        <input type="checkbox" id="episodi" name="episodi" checked />
+                        <label for="episodi" id="labelEpisodi">Autoplay next episode in a series on all devices</label>
+                    </div>
+                    <div class="row">
+                        <button type="button" id="save">
+                            SAVE
+                        </button>
+                    </div>
+                    <div class="row">
+                        <button type="button" id="cancel">
+                            CANCEL
+                        </button>
+                    </div>
+                    <div class="row">
+                        <button type="button" id="deleteProfile">
+                            DELETE PROFILE
+                        </button>
+                    </div>
+
                 </div>
-                <div class="col-sm-5 col-lg-4">
+                <div class="col-4 p-0">
                 </div>
             </div>
         </div>

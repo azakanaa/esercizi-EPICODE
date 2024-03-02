@@ -28,49 +28,39 @@
           <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Tv Shows</a></li>
           <li class="nav-item dropdown">
-            <!-- <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">Shop</a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#!">All Products</a></li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li><a class="dropdown-item" href="#">Popular Items</a></li>
-              <li><a class="dropdown-item" href="#">New Arrivals</a></li>
-            </ul>
-          </li> -->
           <li class="nav-item"><a class="nav-link" href="#">Movies</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Recently Added</a></li>
           <li class="nav-item"><a class="nav-link" href="#">My List</a></li>
         </ul>
-        <div class="nav-item d-lg-flex align-content-lg-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-            viewBox="0 0 16 16">
-            <path
-              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-          </svg>
-          <p>KIDS</p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill"
-            viewBox="0 0 16 16">
-            <path
-              d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
-          </svg>
-          <p></p>
-          <div class="dropdown">
-          <a href="#">
-            <img src="assets/img/avatar.png" alt="Avatar" width="40" height="40" id="dropdownMenuButton" data-toggle="dropdown"/>
-          </a>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" viewBox="0 0 16 16">
-            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-          </svg>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </div>
-          </span>
-        </div>
+        <ul class="navbar-nav mb-lg-0 ms-lg-2">
+          <li class="nav-item dropdown">
+          <li class="nav-item my-2 mx-lg-3 align-self-lg-center text-secondary"><svg xmlns="http://www.w3.org/2000/svg"
+              width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg></li>
+          <li class="nav-item my-2 mx-lg-3 align-self-lg-center text-secondary">KIDS</li>
+          <li class="nav-item my-2 mx-lg-3 align-self-lg-center text-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
+            </svg>
+          </li>
+          <ul class="menuDropdown p-0">
+            <li class="dropdown-center">
+              <a class="dropdown-toggle me-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/img/avatar.png" alt="avatar" width="40" height="40">
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="profile.html">Manage Profiles</a></li>
+                <li><a class="dropdown-item" href="#">Account</a></li>
+                <li><a class="dropdown-item" href="#">Help Center</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Signout Netflix</a></li>
+              </ul>
+          </ul>
+        </ul>
       </div>
     </div>
   </nav>
@@ -85,21 +75,21 @@
               data-bs-toggle="dropdown" aria-expanded="false">
               Genres
             </a>
-            <ul class="dropdown-menu bg-dark">
-              <li><a class="dropdown-item text-light" href="#">Action</a></li>
-              <li><a class="dropdown-item text-light" href="#">Another action</a></li>
-              <li><a class="dropdown-item text-light" href="#">Something else here</a></li>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Fantasy</a></li>
+              <li><a class="dropdown-item" href="#">Musical</a></li>
+              <li><a class="dropdown-item" href="#">Documentary</a></li>
             </ul>
         </ul>
       </div>
 
       <div class="container-fluid d-flex text-light mt-sm-2 mt-lg-0 justify-content-end">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" id="lista"
           class="bi bi-filter-left opacity-50 border border-light border-opacity-50 p-2" viewBox="0 0 16 16">
           <path
             d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5" />
         </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" id="quadratini"
           class="bi bi-grid opacity-50 border border-light border-opacity-50 p-2" viewBox="0 0 16 16">
           <path
             d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z" />
