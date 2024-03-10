@@ -26,6 +26,33 @@
         </div>
         </div>
     </nav>
+
+    <main class="container mt-4">
+        <h1 class="display-6" id="title"></h1>
+        <hr />
+        <div class="container">
+            <form>
+                <div class="container-fluid">
+                    <label for="name" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="name" placeholder="Nome del prodotto" required>
+                    <label for="brand" class="form-label">Brand</label>
+                    <input type="text" class="form-control" id="brand" placeholder="Modello" required>
+                    <label for="price" class="form-label">Prezzo</label>
+                    <input type="number" class="form-control" id="price" placeholder="0€" required>
+                    <label for="imageURL" class="form-label">Url Immagine</label>
+                    <input type="text" class="form-control" id="imageURL" placeholder="http://placehold.it/300x400"
+                        required>
+                    <label for="description" class="form-label">Nome</label>
+                    <textarea id="description" class="form-control" rows="4" required></textarea>
+                    <div class="form-group d-flex justify-content-end mt-4">
+                        <button id="deleteBtn" type="button" class="btn btn-danger me-auto w-25"
+                            onclick="deleteProduct()">🗑️</button>
+                        <button type="reset" class="btn btn-outline-dark me-2 w-25">Reset</button>
+                        <button type="submit" class="btn btn-success w-25" id="submitBtn">Salva</button>
+                    </div>
+            </form>
+        </div>
+    </main>
     <script src="assets/js/product.js"></script>
 </body>
 
