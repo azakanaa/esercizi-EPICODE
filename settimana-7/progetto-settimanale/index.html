@@ -34,19 +34,22 @@
             <div class="row mt-5">
                 <div class="col-1"></div>
                 <div class="col-10">
-                    <h1>Prodotti</h1>
+                    <h1>Prodotti
+                        <span class="spinner-border text-info" id="spinner">
+                            <span class="visually-hidden">Loading...</span>
+                        </span>
+                    </h1>
+
                     <hr />
-                    <div id="album" class="py-5">
-                        <div class="container">
-                            <div class="row" id="cards"></div>
-                        </div>
+                    <div class="container-fluid">
+                        <div class="row row-cols-5" id="cards"></div>
                     </div>
                 </div>
                 <div class="col-1"></div>
             </div>
         </div>
     </main>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
