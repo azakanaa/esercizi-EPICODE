@@ -1,0 +1,63 @@
+{
+    "proxy": "https://corsproxy.io/?",
+    "options": {
+        "artist": {
+            "headers": {
+                "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
+                "X-RapidAPI-Key": "138e211ec9msh30a77ca1a4fa33ep122392jsne5a51611fca7",
+                "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept, Origin"
+            }
+        },
+        "album": {
+            "headers": {
+                "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
+                "X-RapidAPI-Key": "20a6c7f6f6msh8abdf6e44cf4079p1bf658jsnd0755dc053ed",
+                "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept, Origin"
+            }
+        },
+        "search": {
+            "headers": {
+                "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
+                "X-RapidAPI-Key": "795a258612mshd9818e547d03173p17e25bjsn04018e5e81ed",
+                "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept, Origin"
+            }
+        }
+    },
+    "fetchs": {
+        "artist": "https://deezerdevs-deezer.p.rapidapi.com/artist/",
+        "album": "https://deezerdevs-deezer.p.rapidapi.com/album/",
+        "search": "https://deezerdevs-deezer.p.rapidapi.com/search?q="
+    },
+    "artist": {
+        "5695": {
+            "albums": [6439710, 508238241, 494071561, 413523537, 365267397, 256266732]
+        },
+        "8473" : {
+            "albums": [14719204, 324247727, 303982567, 292931292, 88863822 ,6870386]
+        },
+        "48975581" : {
+            "albums": [393585737, 426683117, 169222302, 113850212, 158775982]
+        },
+        "537228" : {
+            "albums": [378837597, 131174172, 51490532, 40858541, 323254517, 205717322]
+        },
+        "456366" : {
+            "albums": [365577717, 443950395, 446346585, 71437082, 470814575, 470814595]
+        },
+        "105945362" : {
+            "albums": [440939307, 413250787]
+        }
+    },
+    "library": {
+        "705" : {
+            "albums": [77895022, 10506072, 5965734, 390984, 1248725, 339063]
+        },
+        "118046632" : {
+            "albums": [272514482, 302157987, 228257312, 268820122, 211418252, 195927362]
+        }
+    },
+    "home": {
+        "albums": [445994175, 13856706, 614608, 510894151, 557619402, 444647875],
+        "tracks": ["beethoven", "mozart", "chopin", "satie"]
+    }
+}
