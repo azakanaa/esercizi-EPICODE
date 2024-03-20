@@ -1,0 +1,15 @@
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div *ngFor="let relate of related" class="col-6">
+            <strong
+                class="d-inline-block mb-2 text-primary-emphasis text-uppercase"
+                *ngFor="let tag of relate.tags"
+                >{{ tag }}&nbsp;</strong
+            >
+            <h3 class="mb-0">{{ relate.title }}</h3>
+            <p class="mb-1 text-secondary">Reactions: {{ relate.reactions }}</p>
+            <p class="mb-auto">{{ relate.body.slice(0, 150) }}...</p>
+            <a href="#">Leggi di più...</a>
+        </div>
+    </div>
+</div>
