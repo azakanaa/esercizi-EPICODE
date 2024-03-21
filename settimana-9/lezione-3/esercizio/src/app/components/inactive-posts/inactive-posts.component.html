@@ -1,26 +1,13 @@
-<div>
-    <div class="px-5 mt-4 py-4 rounded-3" id="piacerti">
-        <h5>Potrebbero piacerti:</h5>
-        <ul class="list-group">
-            <li class="list-group-item" *ngFor="let post of advised">
-                <a href="#">🔗 {{ post.title }}</a>
-                <br />
-                <span
-                    class="badge bg-primary me-1 text-uppercase"
-                    *ngFor="let tag of post.tags"
-                    >{{ tag }}</span>
-                <br />
-                {{ post.reactions }} 👍
-            </li>
-        </ul>
-        <h5>Vedi anche:</h5>
-        <ul class="list-group">
-            <li class="list-group-item">
-                <a href="#">Post attivi</a>
-            </li>
-            <li class="list-group-item">
-                <a href="#">Post inattivi</a>
-            </li>
-        </ul>
+<h1 class="text-center">Inactive posts</h1>
+<div class="card my-2" *ngFor="let post of posts">
+    <div class="card-header">
+        {{ post.tags.join(", ") }}
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">{{ post.title }}</h5>
+        <p class="card-text">{{ post.body }}</p>
+        <a [routerLink]="['/post', post.id]" class="btn btn-primary"
+            >Dettagli</a
+        >
     </div>
 </div>

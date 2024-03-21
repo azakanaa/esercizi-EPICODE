@@ -8,18 +8,18 @@ import { Post } from 'src/app/models/post.interface';
 })
 
 export class ActivePostsComponent {
-  post!: Post;
-  posts!: Post[];
+  posts: Post[] = [];
 
-  constructor() {
-    this.evidencePost();
+
+  constructor(){
+    this.getInactivePosts().then((data) => {
+      this.posts = data;
+  });
   }
 
-  async evidencePost() {
+  async getInactivePosts() {
     const response = await fetch('../../assets/db.json');
-    const data = await response.json();
-    this.posts = data;
-    let index = Math.floor(Math.random() * this.posts.length);
-    this.post = this.posts[index];
+    const data = (await response.json() as Array<Post>)
+    return data.filter((post) => post.active);
   }
 }

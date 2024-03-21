@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Post } from 'src/app/models/post.interface';
+
 
 @Component({
   selector: 'app-post-detail',
@@ -7,34 +9,19 @@ import { Post } from 'src/app/models/post.interface';
   styleUrls: ['./post-detail.component.scss']
 })
 export class PostDetailComponent {
-  posts: Post[] = [];
-  related: Post[] = [];
-  included: number[] = [];
+  postId: number;
+    post!: Post;
 
-  constructor() {
-    this.readPosts();
-  }
+    constructor(private route: ActivatedRoute) {
+        this.postId = Number(this.route.snapshot.paramMap.get('id'));
+        this.getPost().then((data) => {
+            this.post = data;
+        });
+    }
 
-  async readPosts() {
-    const response = await fetch('../../assets/db.json');
-    const data = await response.json();
-    this.posts = data;
-    if (data) {
-      this.relatedPosts();
+    async getPost() {
+        const response = await fetch(`http://localhost:3000/data/${this.postId}`);
+        const data = await response.json();
+        return data;
     }
-  }
-
-  relatedPosts() {
-    for (let i = 0; i < 2; i++) {
-      let index = Math.floor(Math.random() * this.posts.length);
-      if (this.included.includes(index)) {
-        index = Math.floor(Math.random() * this.posts.length);
-      }
-      this.included.push(index);
-    }
-    for (let i = 0; i < this.included.length; i++) {
-      let postIndex = this.included[i] - 1;
-      this.related.push(this.posts[postIndex]);
-    }
-  }
 }

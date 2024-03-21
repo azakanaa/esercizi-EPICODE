@@ -1,6 +1,13 @@
-<div class="container mt-3">
-  <div id="jumbotron" class="mt-4 p-5 rounded">
-    <h1>In evidenza: {{post.title}}</h1>
-    <p>Leggi di più...</p>
-  </div>
+<h1 class="text-center">Active posts</h1>
+<div class="card my-2" *ngFor="let post of posts">
+    <div class="card-header">
+        {{ post.tags.join(", ") }}
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">{{ post.title }}</h5>
+        <p class="card-text">{{ post.body }}</p>
+        <a [routerLink]="['/post', post.id]" class="btn btn-primary"
+            >Dettagli</a
+        >
+    </div>
 </div>
