@@ -1,0 +1,21 @@
+<div class="d-flex justify-content-around">
+    <div class="card" style="width: 18rem;" *ngFor="let cars of related">
+        <img [src]="cars.modelImage" class="card-img-top" [alt]="cars.brand">
+        <div class="card-body">
+            <h5 class="card-title">{{ cars.brand}} {{cars.model}}</h5>
+            <span
+                    class="badge bg-primary me-1 text-uppercase m-1"
+                    >Anno: {{ cars.year }}</span
+                >
+                <span
+                    class="badge bg-primary me-1 text-uppercase m-1"
+                    >Prezzo: {{cars.price}}</span
+                >
+                <span
+                    class="badge bg-primary me-1 text-uppercase m-1"
+                    >Pronta consegna: {{cars.available}}</span
+                >
+            <a href="#" class="btn btn-primary mt-3">Tutte le nostre {{cars.brand}}</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+[
+    {
+        "brand": "Fiat",
+        "brandLogo": "https://upload.wikimedia.org/wikipedia/it/thumb/9/9e/Logo_della_Fiat.svg/640px-Logo_della_Fiat.svg.png",
+        "model": "500L",
+        "modelImage": "https://immagini.alvolante.it/sites/default/files/styles/image_gallery_big/public/serie_auto_galleria/2012/07/fiat_500l_ant_1.png?itok=Jg44PRS9",
+        "year": 2015,
+        "price": 7500,
+        "available": false
+    },
+    {
+        "brand": "Fiat",
+        "brandLogo": "https://upload.wikimedia.org/wikipedia/it/thumb/9/9e/Logo_della_Fiat.svg/640px-Logo_della_Fiat.svg.png",
+        "model": "500 Abarth",
+        "modelImage": "https://cdn.motor1.com/images/mgl/2MnW4/s3/abarth-500e.jpg",
+        "year": 2010,
+        "price": 3500,
+        "available": true
+    },
+    {
+        "brand": "Ford",
+        "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/1280px-Ford_logo_flat.svg.png",
+        "model": "Taurus",
+        "modelImage": "https://www.motortrend.com/uploads/sites/10/2019/06/2019-ford-taurus-sho-sedan-angular-front.png",
+        "year": 2009,
+        "price": 5200,
+        "available": false
+    },
+    {
+        "brand": "Ford",
+        "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/1280px-Ford_logo_flat.svg.png",
+        "model": "Focus",
+        "modelImage": "https://cdn.drivek.com/configurator-imgs/cars/it/Original/FORD/FOCUS/40831_HATCHBACK-5-DOORS/ford-focus-active-2021-side-front.jpg",
+        "year": 2014,
+        "price": 9700,
+        "available": true
+    },
+    {
+        "brand": "Audi",
+        "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Audi-Logo_2016.svg/640px-Audi-Logo_2016.svg.png",
+        "model": "A3",
+        "modelImage": "https://www.noleggiosemplice.it/static/images/vehicles/vehicle_first_img/1667947248964_A3-Sportback.webp",
+        "year": 2012,
+        "price": 4300,
+        "available": true
+    },
+    {
+        "brand": "Audi",
+        "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Audi-Logo_2016.svg/640px-Audi-Logo_2016.svg.png",
+        "model": "Q7",
+        "modelImage": "https://www.autocogliati.it/wp-content/uploads/2023/10/1920x1080-Q7_2020_1986.jpeg",
+        "year": 2020,
+        "price": 41700,
+        "available": false
+    },
+    {
+        "brand": "Ferrari",
+        "brandLogo": "https://upload.wikimedia.org/wikipedia/it/thumb/0/04/Logo_della_Ferrari_S.p.A..svg/300px-Logo_della_Ferrari_S.p.A..svg.png",
+        "model": "SF90 Stradale",
+        "modelImage": "https://m.media-amazon.com/images/I/711tpXB7zrL._AC_UF1000,1000_QL80_.jpg",
+        "year": 2019,
+        "price": 440500,
+        "available": true
+    },
+    {
+        "brand": "Ferrari",
+        "brandLogo": "https://upload.wikimedia.org/wikipedia/it/thumb/0/04/Logo_della_Ferrari_S.p.A..svg/300px-Logo_della_Ferrari_S.p.A..svg.png",
+        "model": "488 Spider",
+        "modelImage": "https://immagini.alvolante.it/sites/default/files/styles/editor_1_colonna/public/primo_contatto_galleria/2015/10/ferrari-488-spider_12.jpg?itok=rnU9fLWp",
+        "year": 2015,
+        "price": 326400,
+        "available": false
+    }
+]
