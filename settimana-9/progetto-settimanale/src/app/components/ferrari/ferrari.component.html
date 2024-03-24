@@ -1,1 +1,28 @@
-<p>ferrari works!</p>
+<div class="container p-5 mt-4 mb-4 bg-body-tertiary rounded-3 text-center">
+    <img src="https://upload.wikimedia.org/wikipedia/it/thumb/0/04/Logo_della_Ferrari_S.p.A..svg/300px-Logo_della_Ferrari_S.p.A..svg.png" alt="logo" />
+    <h1 class="display-5">Le nostre auto <span class="fw-bold">Ferrari</span></h1>
+</div>
+
+<div class="container-fluid d-flex justify-content-evenly mt-5 mb-5">
+    <ng-container *ngFor="let car of cars">
+      <div *ngIf="car.brand == 'Ferrari'" class="card" style="width: 18rem;" [class.bg-danger]="!car.available" [class.bg-success]="car.available">
+        <img [src]="car.modelImage" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{car.model}}</h5>
+          <span
+                    class="badge bg-primary me-1 text-uppercase m-1"
+                    >Anno: {{car.year}}</span
+                >
+                <span
+                    class="badge bg-primary me-1 text-uppercase m-1"
+                    >Prezzo: €{{car.price}}</span
+                >
+                <span
+                    class="badge bg-primary me-1 text-uppercase m-1"
+                    >{{ car.available ? 'PRONTA CONSEGNA: SI' : 'PRONTA CONSEGNA: NO' }}</span
+                >
+            <a [routerLink]="['/ferrari']" class="btn btn-primary mt-3">Tutte le nostre {{car.brand}}</a>
+        </div>
+      </div>
+    </ng-container>
+  </div>

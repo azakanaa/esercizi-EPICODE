@@ -3,22 +3,26 @@
     <h1 class="display-5">Le nostre auto <span class="fw-bold">Audi</span></h1>
 </div>
 
-<div class="card" style="width: 18rem;" *ngFor="let car of cars">
-    <img [src]="" class="card-img-top" [alt]="">
-    <div class="card-body">
-        <h5 class="card-title"></h5>
-        <span
-                class="badge bg-primary me-1 text-uppercase m-1"
-                >Anno: </span
-            >
-            <span
-                class="badge bg-primary me-1 text-uppercase m-1"
-                >Prezzo: </span
-            >
-            <span
-                class="badge bg-primary me-1 text-uppercase m-1"
-                >Pronta consegna: </span
-            >
-        <a href="#" class="btn btn-primary mt-3">Tutte le nostre </a>
-    </div>
-</div>
+<div class="container-fluid d-flex justify-content-evenly mt-5 mb-5">
+    <ng-container *ngFor="let car of cars">
+      <div *ngIf="car.brand == 'Audi'" class="card" style="width: 18rem;" [class.bg-danger]="!car.available" [class.bg-success]="car.available">
+        <img [src]="car.modelImage" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{car.model}}</h5>
+          <span
+                    class="badge bg-primary me-1 text-uppercase m-1"
+                    >Anno: {{car.year}}</span
+                >
+                <span
+                    class="badge bg-primary me-1 text-uppercase m-1"
+                    >Prezzo: €{{car.price}}</span
+                >
+                <span
+                    class="badge bg-primary me-1 text-uppercase m-1"
+                    >{{ car.available ? 'PRONTA CONSEGNA: SI' : 'PRONTA CONSEGNA: NO' }}</span
+                >
+            <a [routerLink]="['/audi']" class="btn btn-primary mt-3">Tutte le nostre {{car.brand}}</a>
+        </div>
+      </div>
+    </ng-container>
+  </div>
