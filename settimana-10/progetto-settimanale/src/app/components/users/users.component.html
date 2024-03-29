@@ -1,0 +1,18 @@
+<app-homepage></app-homepage>
+<div class="border border-black container-fluid mt-4" *ngFor="let user of users">
+    <div class="row">
+        <div class="col-4">
+            <img [src]="user.image" class="border border-5 rounded-circle text-center"/>
+        </div>
+        <div class="col-8">
+            <h3>{{user.firstName}} {{user.lastName}}</h3>
+            <p>{{user.title}}</p>
+            <ng-container *ngFor="let task of tasks">
+                <div *ngIf="task.userId === user.id" [class.bg-success]="task.completed" [class.bg-danger]="!task.completed" class="bg-opacity-50">
+                    <input type="checkbox" [checked]="task.completed" />
+                    <label for="">{{task.todo}}</label>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>

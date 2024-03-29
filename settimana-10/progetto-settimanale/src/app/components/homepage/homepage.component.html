@@ -1,0 +1,18 @@
+<div class="container-fluid mt-4 d-flex justify-content-center">
+    <h1>🌸 Hey Boss, what's my task for the day? 🌸</h1>
+</div>
+<div class="container-fluid mt-4 d-flex justify-content-center">
+    <button type="button" class="btn btn-outline-danger opacity-25 me-3">
+        <a [routerLink]="['completed']">Tasks accomplished <i>!</i></a>
+    </button>
+    <button type="button" class="btn btn-outline-danger opacity-25 me-3">
+        <a [routerLink]="['uncompleted']">What's left <i>?</i></a>
+    </button>
+    <button type="button" class="btn btn-outline-danger opacity-25 me-3">
+        <a [routerLink]="['users']">Users <i>!</i></a>
+    </button>
+    <button type="button" class="btn btn-outline-danger opacity-25">
+        <a [routerLink]="['all']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">All tasks <i>!</i></a>
+    </button>
+</div>
+

@@ -1,0 +1,9 @@
+<app-homepage></app-homepage>
+<div class="container-fluid mt-4 text-center">
+    <ng-container *ngFor="let task of tasks">
+        <div *ngIf="!task.completed" [class.bg-danger]="!task.completed" class="bg-opacity-50 p-3 mt-3">
+            <input type="checkbox" [checked]="task.completed" />
+            <label for="">{{task.todo}}</label>
+        </div>
+    </ng-container>
+</div>

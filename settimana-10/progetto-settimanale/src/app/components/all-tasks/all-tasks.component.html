@@ -1,0 +1,14 @@
+<app-homepage></app-homepage>
+<div id="tasks" class="container-fluid mt-4 text-center">
+    <ng-container *ngFor="let task of tasks">
+        <div [class.bg-success]="task.completed" [class.bg-danger]="!task.completed" class="bg-opacity-50 p-3 mt-3">
+            <input type="checkbox" [checked]="task.completed"/>
+            <label for="">{{task.todo}}</label>
+            <ng-container *ngFor="let user of users">
+                <div *ngIf="task.userId === user.id">
+                    <p>Assigned to: <span>{{user.firstName}} {{user.lastName}}</span></p>
+                </div>
+            </ng-container>
+        </div>
+    </ng-container>
+</div>
