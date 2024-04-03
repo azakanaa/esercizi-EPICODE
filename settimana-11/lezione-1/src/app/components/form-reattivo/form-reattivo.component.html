@@ -1,0 +1,24 @@
+<p>form-reattivo works!</p>
+
+<form>
+    <label class="form-label" for="name">Nome</label>
+    <input type="text" id="name" class="form-control" formControlName="name" />
+    <label class="form-label" for="surname">Cognome</label>
+    <input type="text" id="surname" class="form-control" formControlName="surname" />
+    <label class="form-label" for="password">Password</label>
+    <input type="password" id="password" class="form-control" formControlName="password" />
+    <label class="form-label" for="password2">Conferma Password</label>
+    <input type="password" class="form-control" id="password2" formControlName="password2" />
+    <label class="form-label" for="gender">Seleziona Genere</label>
+    <select id="gender" formControlName="gender">
+        <option value="man">Uomo</option>
+        <option value="woman">Donna</option>
+        <option value="other">Altro</option>
+    </select>
+    <label class="form-label" for="bio">Biografia:</label>
+    <textarea formControlName="bio" id="bio" rows="5" cols="33"></textarea>
+    <label class="form-lable" for="username">Username</label>
+    <input type="text" class="form-control" formControlName="username" />
+    <label for="profileImg">Link immagine di profilo</label>
+    <input type="url" id="profileImg" placeholder="https://example.com" pattern="https://.*" size="30" />
+</form>
