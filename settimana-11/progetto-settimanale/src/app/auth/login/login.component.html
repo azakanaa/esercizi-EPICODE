@@ -1,0 +1,14 @@
+<div class="container text-center mt-3">
+    <h1>Login</h1>
+</div>
+<div class="container">
+    <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+        <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" id="email" required class="form-control" ngModel />
+            <label for="password" class="form-label">Password</label>
+            <input type="password" name="password" id="password" required class="form-control" ngModel />
+        </div>
+        <button type="submit" [disabled]="loginForm.invalid" class="btn btn-primary mt-4">Sign In</button>
+    </form>
+</div>
